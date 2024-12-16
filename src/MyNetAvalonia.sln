@@ -1,0 +1,94 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_config", "_config", "{5D1BCDF4-BE5F-488D-BF24-64F497C5F1B7}"
+	ProjectSection(SolutionItems) = preProject
+		..\.editorconfig = ..\.editorconfig
+		Directory.build.props = Directory.build.props
+		MyNetAvalonia.ruleset = MyNetAvalonia.ruleset
+		Settings.XamlStyler = Settings.XamlStyler
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_doc", "_doc", "{EA1558C3-CFA0-44ED-954B-C773044EB6F9}"
+	ProjectSection(SolutionItems) = preProject
+		..\CHANGELOG.md = ..\CHANGELOG.md
+		..\CODE_OF_CONDUCT.md = ..\CODE_OF_CONDUCT.md
+		..\LICENSE = ..\LICENSE
+		..\images\logo.png = ..\images\logo.png
+		..\README.md = ..\README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_github", "_github", "{E1FDB1EB-FB63-409E-8962-2929AD1EE63C}"
+	ProjectSection(SolutionItems) = preProject
+		..\.github\workflows\ci.yml = ..\.github\workflows\ci.yml
+		..\.github\workflows\create_release.yml = ..\.github\workflows\create_release.yml
+		..\.github\GitVersion.yml = ..\.github\GitVersion.yml
+		..\.github\workflows\git_version.yml = ..\.github\workflows\git_version.yml
+		..\.github\workflows\publish_packages.yml = ..\.github\workflows\publish_packages.yml
+		..\.github\workflows\publish_release.yml = ..\.github\workflows\publish_release.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{AD801A4D-F116-4880-A1B5-54959DCB4B8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyNet.Avalonia.TestApp", "tests\MyNet.Avalonia.TestApp\MyNet.Avalonia.TestApp.csproj", "{EB3F971F-1417-E826-85F2-6EDD0D1608EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyNet.Avalonia.TestApp.Android", "tests\MyNet.Avalonia.TestApp.Android\MyNet.Avalonia.TestApp.Android.csproj", "{2F58E674-950F-DF9E-C2FA-5D2ACC6944DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyNet.Avalonia.TestApp.Browser", "tests\MyNet.Avalonia.TestApp.Browser\MyNet.Avalonia.TestApp.Browser.csproj", "{A1A6271B-0049-8395-062A-37B51CA2DD3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyNet.Avalonia.TestApp.Desktop", "tests\MyNet.Avalonia.TestApp.Desktop\MyNet.Avalonia.TestApp.Desktop.csproj", "{7D122C2D-08A5-D945-C1F7-174E2A3BF738}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyNet.Avalonia.TestApp.iOS", "tests\MyNet.Avalonia.TestApp.iOS\MyNet.Avalonia.TestApp.iOS.csproj", "{25EB5EA0-6945-CD3D-0788-5CAE1DE9C114}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB3F971F-1417-E826-85F2-6EDD0D1608EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB3F971F-1417-E826-85F2-6EDD0D1608EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB3F971F-1417-E826-85F2-6EDD0D1608EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB3F971F-1417-E826-85F2-6EDD0D1608EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F58E674-950F-DF9E-C2FA-5D2ACC6944DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F58E674-950F-DF9E-C2FA-5D2ACC6944DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F58E674-950F-DF9E-C2FA-5D2ACC6944DA}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2F58E674-950F-DF9E-C2FA-5D2ACC6944DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F58E674-950F-DF9E-C2FA-5D2ACC6944DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F58E674-950F-DF9E-C2FA-5D2ACC6944DA}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A1A6271B-0049-8395-062A-37B51CA2DD3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1A6271B-0049-8395-062A-37B51CA2DD3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1A6271B-0049-8395-062A-37B51CA2DD3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1A6271B-0049-8395-062A-37B51CA2DD3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D122C2D-08A5-D945-C1F7-174E2A3BF738}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D122C2D-08A5-D945-C1F7-174E2A3BF738}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D122C2D-08A5-D945-C1F7-174E2A3BF738}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D122C2D-08A5-D945-C1F7-174E2A3BF738}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25EB5EA0-6945-CD3D-0788-5CAE1DE9C114}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25EB5EA0-6945-CD3D-0788-5CAE1DE9C114}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25EB5EA0-6945-CD3D-0788-5CAE1DE9C114}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{25EB5EA0-6945-CD3D-0788-5CAE1DE9C114}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25EB5EA0-6945-CD3D-0788-5CAE1DE9C114}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25EB5EA0-6945-CD3D-0788-5CAE1DE9C114}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EB3F971F-1417-E826-85F2-6EDD0D1608EB} = {AD801A4D-F116-4880-A1B5-54959DCB4B8E}
+		{2F58E674-950F-DF9E-C2FA-5D2ACC6944DA} = {AD801A4D-F116-4880-A1B5-54959DCB4B8E}
+		{A1A6271B-0049-8395-062A-37B51CA2DD3E} = {AD801A4D-F116-4880-A1B5-54959DCB4B8E}
+		{7D122C2D-08A5-D945-C1F7-174E2A3BF738} = {AD801A4D-F116-4880-A1B5-54959DCB4B8E}
+		{25EB5EA0-6945-CD3D-0788-5CAE1DE9C114} = {AD801A4D-F116-4880-A1B5-54959DCB4B8E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		RESX_ConfirmAddLanguageFile = True
+		RESX_AutoCreateNewLanguageFiles = True
+		RESX_NeutralResourcesLanguage = fr-FR
+		SolutionGuid = {4C2A7472-FBCC-4D2C-B21D-0C83E4ADAA1A}
+		RESX_CodeReferences = {"Items":[{"Expression":"\\W($File.$Key)\\W","Extensions":".cs,.xaml,.cshtml","IsCaseSensitive":true,"SingleLineComment":"\/\/"},{"Expression":"\\W($File.$Key)\\W","Extensions":".vbhtml","IsCaseSensitive":false,"SingleLineComment":null},{"Expression":"ResourceManager.GetString\\(\"($Key)\"\\)","Extensions":".cs","IsCaseSensitive":true,"SingleLineComment":"\/\/"},{"Expression":"typeof\\((\\w+\\.)*($File)\\).+\"($Key)\"|\"($Key)\".+typeof\\((\\w+\\.)*($File)\\)","Extensions":".cs","IsCaseSensitive":true,"SingleLineComment":"\/\/"},{"Expression":"\\W($Key)\\W","Extensions":".vb","IsCaseSensitive":false,"SingleLineComment":"'"},{"Expression":"\\W($File::$Key)\\W","Extensions":".cpp,.c,.hxx,.h","IsCaseSensitive":true,"SingleLineComment":"\/\/"},{"Expression":"&lt;%\\$\\s+Resources:\\s*($File)\\s*,\\s*($Key)\\s*%&gt;","Extensions":".aspx,.ascx,.master","IsCaseSensitive":true,"SingleLineComment":null},{"Expression":"StringResourceKey\\.($Key)","Extensions":".cs","IsCaseSensitive":true,"SingleLineComment":"\/\/"},{"Expression":"\\.($Key)","Extensions":".ts,.html","IsCaseSensitive":true,"SingleLineComment":"\/\/"},{"Expression":"typeof\\((\\w+\\.)*($File)\\).+nameof\\(($Key)\\)|nameof\\(($Key)\\).+typeof\\((\\w+\\.)*($File)\\)","Extensions":".cs","IsCaseSensitive":true,"SingleLineComment":"\/\/"},{"Expression":"{me:Resource (Key=)?($Key).*","Extensions":".xaml","IsCaseSensitive":true,"SingleLineComment":"\/\/"},{"Expression":"{me:Translation .*Format=$Key.*","Extensions":".xaml","IsCaseSensitive":true,"SingleLineComment":"\/\/"},{"Expression":"{my:Resource (Key=)?($Key).*","Extensions":".xaml","IsCaseSensitive":true,"SingleLineComment":"\/\/"},{"Expression":"Format=($Key)","Extensions":".xaml","IsCaseSensitive":true,"SingleLineComment":"\/\/"},{"Expression":"{my:ShortcutResource (Key=)?($Key).*","Extensions":".xaml","IsCaseSensitive":true,"SingleLineComment":"\/\/"}]}
+		RESX_ShowErrorsInErrorList = False
+	EndGlobalSection
+EndGlobal
