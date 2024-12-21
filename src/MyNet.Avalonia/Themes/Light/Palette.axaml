@@ -1,0 +1,17 @@
+<ResourceDictionary x:Class="MyNet.Avalonia.Themes.Light.Palette" xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <!-- Application -->
+    <Color x:Key="MyNet.Color.Application.Background">#EBEBEB</Color>
+    <Color x:Key="MyNet.Color.Application.Foreground">#242424</Color>
+
+    <!-- Controls -->
+    <Color x:Key="MyNet.Color.Control.Background">#E5E5E5</Color>
+    <Color x:Key="MyNet.Color.Control.Border">#C5C5C5</Color>
+
+    <!-- Brushes -->
+    <SolidColorBrush x:Key="MyNet.Brush.Application.Background" Color="{StaticResource MyNet.Color.Application.Background}" />
+    <SolidColorBrush x:Key="MyNet.Brush.Application.Foreground" Color="{StaticResource MyNet.Color.Application.Foreground}" />
+    <SolidColorBrush x:Key="MyNet.Brush.Control.Background" Color="{StaticResource MyNet.Color.Control.Background}" />
+    <SolidColorBrush x:Key="MyNet.Brush.Control.Border" Color="{StaticResource MyNet.Color.Control.Border}" />
+    
+</ResourceDictionary>

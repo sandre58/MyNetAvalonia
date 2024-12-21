@@ -1,0 +1,16 @@
+<ResourceDictionary x:Class="MyNet.Avalonia.Themes.Dark.Palette" xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <!-- Application -->
+    <Color x:Key="MyNet.Color.Application.Background">#202020</Color>
+    <Color x:Key="MyNet.Color.Application.Foreground">#FFFFFF</Color>
+
+    <!-- Controls -->
+    <Color x:Key="MyNet.Color.Control.Background">#3F3F3F</Color>
+    <Color x:Key="MyNet.Color.Control.Border">#525252</Color>
+    
+    <!-- Brushes -->
+    <SolidColorBrush x:Key="MyNet.Brush.Application.Background" Color="{StaticResource MyNet.Color.Application.Background}" />
+    <SolidColorBrush x:Key="MyNet.Brush.Application.Foreground" Color="{StaticResource MyNet.Color.Application.Foreground}" />
+    <SolidColorBrush x:Key="MyNet.Brush.Control.Background" Color="{StaticResource MyNet.Color.Control.Background}" />
+    <SolidColorBrush x:Key="MyNet.Brush.Control.Border" Color="{StaticResource MyNet.Color.Control.Border}" />
+</ResourceDictionary>

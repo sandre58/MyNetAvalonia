@@ -1,0 +1,22 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Font Sizes -->
+    <x:Double x:Key="MyNet.Font.Size.Button">12</x:Double>
+    
+    <!-- Font Weight -->
+    <FontWeight x:Key="MyNet.Font.Weight.Button">Normal</FontWeight>
+    
+    <!-- Padding -->
+    <Thickness x:Key="MyNet.Padding.Button">11,5</Thickness>
+
+    <!-- Corner -->
+    <CornerRadius x:Key="MyNet.CornerRadius.Button">3</CornerRadius>
+
+    <!-- Alignments -->
+    <VerticalAlignment x:Key="MyNet.VerticalAlignment.Control">Center</VerticalAlignment>
+    <VerticalAlignment x:Key="MyNet.VerticalAlignment.Container">Stretch</VerticalAlignment>
+    <HorizontalAlignment x:Key="MyNet.HorizontalAlignment.Control">Left</HorizontalAlignment>
+    <HorizontalAlignment x:Key="MyNet.HorizontalAlignment.Container">Stretch</HorizontalAlignment>
+    
+</ResourceDictionary>

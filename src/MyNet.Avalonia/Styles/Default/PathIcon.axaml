@@ -1,0 +1,44 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    x:CompileBindings="True">
+    <ControlTheme x:Key="{x:Type PathIcon}" TargetType="PathIcon">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="Height" Value="{StaticResource MyNet.Icon.Size.Default}" />
+        <Setter Property="Width" Value="{StaticResource MyNet.Icon.Size.Default}" />
+        <Setter Property="Template">
+            <ControlTemplate TargetType="PathIcon">
+                <Border Background="{TemplateBinding Background}">
+                    <Viewbox Width="{TemplateBinding Width}" Height="{TemplateBinding Height}">
+                        <Path Name="PART_Path"
+                              Data="{TemplateBinding Data}"
+                              Fill="{TemplateBinding Foreground}"
+                              Stretch="Uniform" />
+                    </Viewbox>
+                </Border>
+            </ControlTemplate>
+        </Setter>
+        <Style Selector="^.Active /template/ Path#PART_Path">
+            <Setter Property="Fill" Value="{TemplateBinding BorderBrush}" />
+        </Style>
+        <Style Selector="^.ExtraSmall">
+            <Setter Property="Height" Value="{StaticResource MyNet.Icon.Size.ExtraSmall}" />
+            <Setter Property="Width" Value="{StaticResource MyNet.Icon.Size.ExtraSmall}" />
+        </Style>
+        <Style Selector="^.Small">
+            <Setter Property="Height" Value="{StaticResource MyNet.Icon.Size.Small}" />
+            <Setter Property="Width" Value="{StaticResource MyNet.Icon.Size.Small}" />
+        </Style>
+        <Style Selector="^.Medium">
+            <Setter Property="Height" Value="{StaticResource MyNet.Icon.Size.Default}" />
+            <Setter Property="Width" Value="{StaticResource MyNet.Icon.Size.Default}" />
+        </Style>
+        <Style Selector="^.Large">
+            <Setter Property="Height" Value="{StaticResource MyNet.Icon.Size.Large}" />
+            <Setter Property="Width" Value="{StaticResource MyNet.Icon.Size.Large}" />
+        </Style>
+        <Style Selector="^.ExtraLarge">
+            <Setter Property="Height" Value="{StaticResource MyNet.Icon.Size.ExtraLarge}" />
+            <Setter Property="Width" Value="{StaticResource MyNet.Icon.Size.ExtraLarge}" />
+        </Style>
+    </ControlTheme>
+</ResourceDictionary>

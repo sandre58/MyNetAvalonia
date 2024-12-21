@@ -1,12 +1,38 @@
-<Window xmlns="https://github.com/avaloniaui"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:vm="using:MyNet.Avalonia.TestApp.ViewModels"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:views="clr-namespace:MyNet.Avalonia.TestApp.Views"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-        x:Class="MyNet.Avalonia.TestApp.Views.MainWindow"
-        Icon="/Assets/avalonia-logo.ico"
-        Title="MyNet.Avalonia.TestApp">
-        <views:MainView />
-</Window>
+<my:ExtendedWindow x:Class="MyNet.Avalonia.TestApp.Views.MainWindow"
+                   xmlns="https://github.com/avaloniaui"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                   xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                   xmlns:my="http://mynet.com/avalonia"
+                   xmlns:views="clr-namespace:MyNet.Avalonia.TestApp.Views"
+                   xmlns:vm="using:MyNet.Avalonia.TestApp.ViewModels"
+                   Title="My .NET Avalonia"
+                   d:DesignHeight="450"
+                   d:DesignWidth="800"
+                   x:DataType="vm:MainViewModel"
+                   Icon="/Assets/TestApp.ico"
+                   IsFullScreenButtonVisible="{OnPlatform True,
+                                                          macOS=False}"
+                   IsManagedResizerVisible="{OnPlatform False,
+                                                        Linux=True}"
+                   mc:Ignorable="d">
+    <my:ExtendedWindow.RightContent>
+        <StackPanel Orientation="Horizontal">
+            <my:SimpleStackPanel Margin="{my:Thickness Medium, Horizontal}" VerticalAlignment="Center" Orientation="Horizontal">
+                <!--<Button Command="{Binding IsLightCommand}" Content="{my:Icon WeatherSunny, Small}" ToolTip="{my:Resource Light}" />
+                <Button Command="{Binding IsDarkCommand}" Content="{my:Icon WeatherNight, Small}" ToolTip="{my:Resource Dark}" />-->
+                <!--<Button Style="{StaticResource MyNet.Styles.Button.Icon.Foreground}"
+                        Command="{Binding IsLightCommand}"
+                        Content="{my:ToolIcon Kind=WeatherSunny}"
+                        ToolTip="{my:Resource Light}" />
+                <ToggleButton Style="{StaticResource MyNet.Styles.ToggleButton.Switch.Foreground}" IsChecked="{Binding IsDark}" />
+                <Button Style="{StaticResource MyNet.Styles.Button.Icon.Foreground}"
+                        Command="{Binding IsDarkCommand}"
+                        Content="{my:ToolIcon Kind=WeatherNight}"
+                        ToolTip="{my:Resource Dark}" />-->
+            </my:SimpleStackPanel>
+            <!--<my:ThemeToggleButton IsThreeState="True" Mode="Controller" />-->
+        </StackPanel>
+    </my:ExtendedWindow.RightContent>
+    <views:MainView />
+</my:ExtendedWindow>

@@ -1,11 +1,12 @@
-﻿using System;
+﻿// Copyright (c) Stéphane ANDRE. All Right Reserved.
+// See the LICENSE file in the project root for more information.
 
+using System;
 using Avalonia;
-using Avalonia.ReactiveUI;
 
 namespace MyNet.Avalonia.TestApp.Desktop;
 
-class Program
+internal static class Program
 {
     // Initialization code. Don't use any Avalonia, third-party APIs or any
     // SynchronizationContext-reliant code before AppMain is called: things aren't initialized
@@ -19,6 +20,5 @@ class Program
         => AppBuilder.Configure<App>()
             .UsePlatformDetect()
             .WithInterFont()
-            .LogToTrace()
-            .UseReactiveUI();
+            .LogToTrace();
 }

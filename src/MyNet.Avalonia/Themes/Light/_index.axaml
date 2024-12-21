@@ -1,0 +1,6 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceInclude Source="avares://MyNet.Avalonia/Themes/Light/CaptionButtons.axaml" />
+        <ResourceInclude Source="avares://MyNet.Avalonia/Themes/Light/Palette.axaml" />
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

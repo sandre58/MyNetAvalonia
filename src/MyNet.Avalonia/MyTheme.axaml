@@ -1,0 +1,16 @@
+<Styles x:Class="MyNet.Avalonia.MyTheme" xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Styles.Resources>
+        <ResourceDictionary>
+            
+            <ResourceDictionary.ThemeDictionaries>
+                <ResourceInclude x:Key="Default" Source="avares://MyNet.Avalonia/Themes/Light/_index.axaml" />
+                <ResourceInclude x:Key="Dark" Source="avares://MyNet.Avalonia/Themes/Dark/_index.axaml" />
+            </ResourceDictionary.ThemeDictionaries>
+            
+            <ResourceDictionary.MergedDictionaries>                
+                <ResourceInclude Source="avares://MyNet.Avalonia/Styles/_index.axaml" />
+                <ResourceInclude Source="avares://MyNet.Avalonia/Themes/_index.axaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Styles.Resources>
+</Styles>

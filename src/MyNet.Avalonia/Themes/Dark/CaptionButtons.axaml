@@ -1,0 +1,9 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Brushes -->
+    <SolidColorBrush x:Key="MyNet.Brush.Button.Caption.Background.Hovered" Opacity="0.16" Color="White" />
+    <SolidColorBrush x:Key="MyNet.Brush.Button.Caption.Background.Pressed" Opacity="0.20" Color="White" />
+    <SolidColorBrush x:Key="MyNet.Brush.Button.Caption.Foreground" Opacity="0.6" Color="#F9F9F9" />
+    <SolidColorBrush x:Key="MyNet.Brush.Button.Caption.Close.Hovered" Color="#D52515" />
+    <SolidColorBrush x:Key="MyNet.Brush.Button.Caption.Close.Pressed" Color="#B2140C" />
+</ResourceDictionary>

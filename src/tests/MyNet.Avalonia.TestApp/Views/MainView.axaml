@@ -1,16 +1,37 @@
-<UserControl xmlns="https://github.com/avaloniaui"
+<UserControl x:Class="MyNet.Avalonia.TestApp.Views.MainView"
+             xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:my="http://mynet.com/avalonia"
              xmlns:vm="clr-namespace:MyNet.Avalonia.TestApp.ViewModels"
-             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-             x:Class="MyNet.Avalonia.TestApp.Views.MainView"
-             x:DataType="vm:MainViewModel">
-  <Design.DataContext>
-    <!-- This only sets the DataContext for the previewer in an IDE,
-         to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
-    <vm:MainViewModel />
-  </Design.DataContext>
+             d:DesignHeight="450"
+             d:DesignWidth="800"
+             x:DataType="vm:MainViewModel"
+             mc:Ignorable="d">
 
-  <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <my:SimpleStackPanel Margin="0 50 0 0" Orientation="Horizontal">
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="Test" />
+        <Button Width="100"
+                Background="{DynamicResource MyNet.Brush.Primary}"
+                Command="{Binding SetPrimaryColorCommand}"
+                Content="Primary"
+                Foreground="{DynamicResource MyNet.Brush.Primary.Foreground}" />
+        <Button Width="100"
+                Background="{DynamicResource MyNet.Brush.Accent}"
+                Command="{Binding SetAccentColorCommand}"
+                Content="Accent"
+                Foreground="{DynamicResource MyNet.Brush.Accent.Foreground}" />
+        <TextBlock Text="Size" />
+        <Slider Name="width"
+                Width="300"
+                Maximum="100"
+                Minimum="0"
+                Value="20" />
+        <CheckBox Name="active" Content="Active" />
+        <my:OutlinedIcon Width="{Binding #width.Value}"
+                         Height="{Binding #width.Value}"
+                         Data="M12 3L2 12H5V20H19V12H22L12 3M13 18H11V16H13V18M13 14H11V8H13V14Z"
+                         IsActive="{Binding ElementName=active, Path=IsChecked}" />
+    </my:SimpleStackPanel>
 </UserControl>

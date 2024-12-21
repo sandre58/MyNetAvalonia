@@ -3,7 +3,8 @@
     <OutputType>Exe</OutputType>
     <TargetFrameworks>net8.0-ios;net9.0-ios</TargetFrameworks>
     <SupportedOSPlatformVersion>13.0</SupportedOSPlatformVersion>
-    <Nullable>enable</Nullable>
+    <BaseOutputPath>$(SolutionDir)..\build\$(MSBuildProjectName)</BaseOutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
 
   <ItemGroup>

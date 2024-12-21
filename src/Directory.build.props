@@ -14,7 +14,9 @@
     <!-- Used by other projects -->
     <VersionPrefix>1.0.0</VersionPrefix>
     <VersionSuffix>alpha</VersionSuffix>
-    <AvaloniaVersion>11.1.0</AvaloniaVersion>
+
+    <!-- Packages version -->
+    <AvaloniaVersion>11.2.3</AvaloniaVersion>
   </PropertyGroup>
 
 <!-- Configuration -->
