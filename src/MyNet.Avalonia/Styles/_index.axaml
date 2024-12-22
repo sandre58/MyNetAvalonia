@@ -5,8 +5,8 @@
 
         <!-- Default -->
         <!--<ResourceInclude Source="avares://MyNet.Avalonia/Styles/Default/AdornerLayer.axaml" />
-        <ResourceInclude Source="avares://MyNet.Avalonia/Styles/Default/AutoCompleteBox.axaml" />
-        <ResourceInclude Source="avares://MyNet.Avalonia/Styles/Default/Border.axaml" />-->
+        <ResourceInclude Source="avares://MyNet.Avalonia/Styles/Default/AutoCompleteBox.axaml" />-->
+        <ResourceInclude Source="avares://MyNet.Avalonia/Styles/Default/Border.axaml" />
         <ResourceInclude Source="avares://MyNet.Avalonia/Styles/Default/Button.axaml" />
         <!--<ResourceInclude Source="avares://MyNet.Avalonia/Styles/Default/ButtonSpinner.axaml" />
         <ResourceInclude Source="avares://MyNet.Avalonia/Styles/Default/Calendar.axaml" />
@@ -27,9 +27,9 @@
         <ResourceInclude Source="avares://MyNet.Avalonia/Styles/Default/HeaderedContentControl.axaml" />
         <ResourceInclude Source="avares://MyNet.Avalonia/Styles/Default/HyperlinkButton.axaml" />
         <ResourceInclude Source="avares://MyNet.Avalonia/Styles/Default/ItemsControl.axaml" />
-        <ResourceInclude Source="avares://MyNet.Avalonia/Styles/Default/Label.axaml" />
+        <ResourceInclude Source="avares://MyNet.Avalonia/Styles/Default/Label.axaml" />-->
         <ResourceInclude Source="avares://MyNet.Avalonia/Styles/Default/ListBox.axaml" />
-        <ResourceInclude Source="avares://MyNet.Avalonia/Styles/Default/ManagedFileChooser.axaml" />
+       <!-- <ResourceInclude Source="avares://MyNet.Avalonia/Styles/Default/ManagedFileChooser.axaml" />
         <ResourceInclude Source="avares://MyNet.Avalonia/Styles/Default/Menu.axaml" />
         <ResourceInclude Source="avares://MyNet.Avalonia/Styles/Default/MenuFlyoutPresenter.axaml" />
         <ResourceInclude Source="avares://MyNet.Avalonia/Styles/Default/NotificationCard.axaml" />
@@ -47,16 +47,16 @@
         <ResourceInclude Source="avares://MyNet.Avalonia/Styles/Default/SplitView.axaml" />
         <ResourceInclude Source="avares://MyNet.Avalonia/Styles/Default/TabControl.axaml" />
         <ResourceInclude Source="avares://MyNet.Avalonia/Styles/Default/TabItem.axaml" />
-        <ResourceInclude Source="avares://MyNet.Avalonia/Styles/Default/TabStrip.axaml" />
+        <ResourceInclude Source="avares://MyNet.Avalonia/Styles/Default/TabStrip.axaml" />-->
         <ResourceInclude Source="avares://MyNet.Avalonia/Styles/Default/TextBlock.axaml" />
-        <ResourceInclude Source="avares://MyNet.Avalonia/Styles/Default/TextBox.axaml" />
+        <!--<ResourceInclude Source="avares://MyNet.Avalonia/Styles/Default/TextBox.axaml" />
         <ResourceInclude Source="avares://MyNet.Avalonia/Styles/Default/ThemeVariantScope.axaml" />
         <ResourceInclude Source="avares://MyNet.Avalonia/Styles/Default/TimePicker.axaml" />-->
         <ResourceInclude Source="avares://MyNet.Avalonia/Styles/Default/TitleBar.axaml" />
         <!--<ResourceInclude Source="avares://MyNet.Avalonia/Styles/Default/ToggleButton.axaml" />
-        <ResourceInclude Source="avares://MyNet.Avalonia/Styles/Default/ToggleSwitch.axaml" />
+        <ResourceInclude Source="avares://MyNet.Avalonia/Styles/Default/ToggleSwitch.axaml" />-->
         <ResourceInclude Source="avares://MyNet.Avalonia/Styles/Default/Tooltip.axaml" />
-        <ResourceInclude Source="avares://MyNet.Avalonia/Styles/Default/TransitioningContentControl.axaml" />
+        <!--<ResourceInclude Source="avares://MyNet.Avalonia/Styles/Default/TransitioningContentControl.axaml" />
         <ResourceInclude Source="avares://MyNet.Avalonia/Styles/Default/TreeView.axaml" />-->
         <ResourceInclude Source="avares://MyNet.Avalonia/Styles/Default/Window.axaml" />
         <!--<ResourceInclude Source="avares://MyNet.Avalonia/Styles/Default/WindowNotificationManager.axaml" />-->
@@ -89,9 +89,9 @@
         <ResourceInclude Source="avares://MyNet.Avalonia/Styles/Custom/KeyGestureInput.axaml" />
         <ResourceInclude Source="avares://MyNet.Avalonia/Styles/Custom/Loading.axaml" />
         <ResourceInclude Source="avares://MyNet.Avalonia/Styles/Custom/MessageBox.axaml" />
-        <ResourceInclude Source="avares://MyNet.Avalonia/Styles/Custom/MultiComboBox.axaml" />
-        <ResourceInclude Source="avares://MyNet.Avalonia/Styles/Custom/NavMenu.axaml" />
-        <ResourceInclude Source="avares://MyNet.Avalonia/Styles/Custom/Notification.axaml" />
+        <ResourceInclude Source="avares://MyNet.Avalonia/Styles/Custom/MultiComboBox.axaml" />-->
+        <ResourceInclude Source="avares://MyNet.Avalonia/Styles/Custom/NavigationMenu.axaml" />
+        <!--<ResourceInclude Source="avares://MyNet.Avalonia/Styles/Custom/Notification.axaml" />
         <ResourceInclude Source="avares://MyNet.Avalonia/Styles/Custom/NumericUpDown.axaml" />
         <ResourceInclude Source="avares://MyNet.Avalonia/Styles/Custom/NumPad.axaml" />
         <ResourceInclude Source="avares://MyNet.Avalonia/Styles/Custom/NumberDisplayer.axaml" />-->

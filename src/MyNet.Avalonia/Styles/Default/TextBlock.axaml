@@ -1,0 +1,94 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    x:CompileBindings="True">
+    
+    <ControlTheme x:Key="{x:Type TextBlock}" TargetType="TextBlock">
+        <Style Selector="^.Secondary">
+            <Setter Property="Opacity" Value="{StaticResource MyNet.Opacity.Secondary}" />
+        </Style>
+        <Style Selector="^.Tertiary">
+            <Setter Property="Foreground" Value="{DynamicResource MyNet.Opacity.Medium}" />
+        </Style>
+        <Style Selector="^.None">
+            <Setter Property="Foreground" Value="{DynamicResource MyNet.Brush.None}" />
+        </Style>
+        <Style Selector="^.Positive">
+            <Setter Property="Foreground" Value="{DynamicResource MyNet.Brush.Positive}" />
+        </Style>
+        <Style Selector="^.Warning">
+            <Setter Property="Foreground" Value="{DynamicResource MyNet.Brush.Warning}" />
+        </Style>
+        <Style Selector="^.Negative">
+            <Setter Property="Foreground" Value="{DynamicResource MyNet.Brush.Negative}" />
+        </Style>
+        <Style Selector="^.Information">
+            <Setter Property="Foreground" Value="{DynamicResource MyNet.Brush.Information}" />
+        </Style>
+        <Style Selector="^.Underline">
+            <Setter Property="TextDecorations" Value="Underline" />
+        </Style>
+        <Style Selector="^.Delete">
+            <Setter Property="TextDecorations" Value="StrikeThrough" />
+        </Style>
+        <Style Selector="^.Underline.Delete">
+            <Setter Property="TextDecorations">
+                <TextDecorationCollection>
+                    <TextDecoration Location="Underline" />
+                    <TextDecoration Location="Strikethrough" />
+                </TextDecorationCollection>
+            </Setter>
+        </Style>
+        <Style Selector="^.H1">
+            <Setter Property="FontWeight" Value="600" />
+            <Setter Property="FontSize" Value="{DynamicResource MyNet.Font.Size.H1}" />
+        </Style>
+        <Style Selector="^.H2">
+            <Setter Property="FontWeight" Value="600" />
+            <Setter Property="FontSize" Value="{DynamicResource MyNet.Font.Size.H2}" />
+        </Style>
+        <Style Selector="^.H3">
+            <Setter Property="FontWeight" Value="600" />
+            <Setter Property="FontSize" Value="{DynamicResource MyNet.Font.Size.H3}" />
+        </Style>
+        <Style Selector="^.H4">
+            <Setter Property="FontWeight" Value="600" />
+            <Setter Property="FontSize" Value="{DynamicResource MyNet.Font.Size.H4}" />
+        </Style>
+        <Style Selector="^.H5">
+            <Setter Property="FontWeight" Value="600" />
+            <Setter Property="FontSize" Value="{DynamicResource MyNet.Font.Size.H5}" />
+        </Style>
+        <Style Selector="^.H6">
+            <Setter Property="FontWeight" Value="600" />
+            <Setter Property="FontSize" Value="{DynamicResource MyNet.Font.Size.H6}" />
+        </Style>
+        <Style Selector="^:disabled">
+            <Setter Property="Opacity" Value="{StaticResource MyNet.Opacity.Disabled}" />
+        </Style>
+    </ControlTheme>
+
+    <ControlTheme x:Key="TitleTextBlock" TargetType="TextBlock" BasedOn="{StaticResource {x:Type TextBlock}}">
+        <Setter Property="FontWeight" Value="{DynamicResource TextBlockTitleFontWeight}" />
+        <Style Selector="^.H1">
+            <Setter Property="FontSize" Value="{DynamicResource TextBlockTitleH1FontSize}" />
+        </Style>
+        <Style Selector="^.H2">
+            <Setter Property="FontSize" Value="{DynamicResource TextBlockTitleH2FontSize}" />
+        </Style>
+        <Style Selector="^.H3">
+            <Setter Property="FontSize" Value="{DynamicResource TextBlockTitleH3FontSize}" />
+        </Style>
+        <Style Selector="^.H4">
+            <Setter Property="FontSize" Value="{DynamicResource TextBlockTitleH4FontSize}" />
+        </Style>
+        <Style Selector="^.H5">
+            <Setter Property="FontSize" Value="{DynamicResource TextBlockTitleH5FontSize}" />
+        </Style>
+        <Style Selector="^.H6">
+            <Setter Property="FontSize" Value="{DynamicResource TextBlockTitleH6FontSize}" />
+        </Style>
+        <Style Selector="^:disabled">
+            <Setter Property="Foreground" Value="{DynamicResource TextBlockDisabledForeground}" />
+        </Style>
+    </ControlTheme>
+</ResourceDictionary>

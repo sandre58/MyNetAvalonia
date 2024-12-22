@@ -41,8 +41,7 @@ namespace MyNet.Avalonia.MarkupExtensions
 
         public bool UpdateOnTimeZoneChanged { get; set; }
 
-        public override object ProvideValue(IServiceProvider serviceProvider)
-        {
+        public override object ProvideValue(IServiceProvider serviceProvider) =>
             //if (Binding.ProvideValue(serviceProvider) is BindingExpressionBase expression)
             //{
             //    void handler(object? o, EventArgs e)
@@ -70,7 +69,6 @@ namespace MyNet.Avalonia.MarkupExtensions
             //    return expression;
             //}
 
-            return Binding;
-        }
+            Binding;
     }
 }

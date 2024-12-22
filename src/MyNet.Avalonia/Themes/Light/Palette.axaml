@@ -8,10 +8,41 @@
     <Color x:Key="MyNet.Color.Control.Background">#E5E5E5</Color>
     <Color x:Key="MyNet.Color.Control.Border">#C5C5C5</Color>
 
+    <!-- Containers -->
+    <Color x:Key="MyNet.Color.Container.Background">#F6F6F6</Color>
+    <Color x:Key="MyNet.Color.Container.Border">#DADADA</Color>
+
+    <!-- Popup -->
+    <Color x:Key="MyNet.Color.Popup.Background">#41464C</Color>
+    <Color x:Key="MyNet.Color.Popup.Border">Transparent</Color>
+
+    <!-- ToolTip -->
+    <Color x:Key="MyNet.Color.ToolTip.Background">#41464C</Color>
+    <Color x:Key="MyNet.Color.ToolTip.Border">Transparent</Color>
+
+    <!-- States -->
+    <Color x:Key="MyNet.Color.None">#828282</Color>
+    <Color x:Key="MyNet.Color.Positive">#388A34</Color>
+    <Color x:Key="MyNet.Color.Negative">#A1260D</Color>
+    <Color x:Key="MyNet.Color.Warning">#DD6E00</Color>
+    <Color x:Key="MyNet.Color.Information">#1BA1E2</Color>
+
+
     <!-- Brushes -->
     <SolidColorBrush x:Key="MyNet.Brush.Application.Background" Color="{StaticResource MyNet.Color.Application.Background}" />
     <SolidColorBrush x:Key="MyNet.Brush.Application.Foreground" Color="{StaticResource MyNet.Color.Application.Foreground}" />
     <SolidColorBrush x:Key="MyNet.Brush.Control.Background" Color="{StaticResource MyNet.Color.Control.Background}" />
     <SolidColorBrush x:Key="MyNet.Brush.Control.Border" Color="{StaticResource MyNet.Color.Control.Border}" />
+    <SolidColorBrush x:Key="MyNet.Brush.Container.Background" Color="{StaticResource MyNet.Color.Container.Background}" />
+    <SolidColorBrush x:Key="MyNet.Brush.Container.Border" Color="{StaticResource MyNet.Color.Container.Border}" />
+    <SolidColorBrush x:Key="MyNet.Brush.Popup.Background" Color="{StaticResource MyNet.Color.Popup.Background}" />
+    <SolidColorBrush x:Key="MyNet.Brush.Popup.Border" Color="{StaticResource MyNet.Color.Popup.Border}" />
+    <SolidColorBrush x:Key="MyNet.Brush.ToolTip.Background" Color="{StaticResource MyNet.Color.ToolTip.Background}" />
+    <SolidColorBrush x:Key="MyNet.Brush.ToolTip.Border" Color="{StaticResource MyNet.Color.ToolTip.Border}" />
+    <SolidColorBrush x:Key="MyNet.Brush.None" Color="{StaticResource MyNet.Color.None}" />
+    <SolidColorBrush x:Key="MyNet.Brush.Positive" Color="{StaticResource MyNet.Color.Positive}" />
+    <SolidColorBrush x:Key="MyNet.Brush.Negative" Color="{StaticResource MyNet.Color.Negative}" />
+    <SolidColorBrush x:Key="MyNet.Brush.Warning" Color="{StaticResource MyNet.Color.Warning}" />
+    <SolidColorBrush x:Key="MyNet.Brush.Information" Color="{StaticResource MyNet.Color.Information}" />
     
 </ResourceDictionary>

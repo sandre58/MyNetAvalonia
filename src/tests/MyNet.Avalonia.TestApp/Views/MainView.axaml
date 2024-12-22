@@ -10,28 +10,68 @@
              x:DataType="vm:MainViewModel"
              mc:Ignorable="d">
 
-    <my:SimpleStackPanel Margin="0 50 0 0" Orientation="Horizontal">
-        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="Test" />
-        <Button Width="100"
-                Background="{DynamicResource MyNet.Brush.Primary}"
-                Command="{Binding SetPrimaryColorCommand}"
-                Content="Primary"
-                Foreground="{DynamicResource MyNet.Brush.Primary.Foreground}" />
-        <Button Width="100"
-                Background="{DynamicResource MyNet.Brush.Accent}"
-                Command="{Binding SetAccentColorCommand}"
-                Content="Accent"
-                Foreground="{DynamicResource MyNet.Brush.Accent.Foreground}" />
-        <TextBlock Text="Size" />
-        <Slider Name="width"
-                Width="300"
-                Maximum="100"
-                Minimum="0"
-                Value="20" />
-        <CheckBox Name="active" Content="Active" />
-        <my:OutlinedIcon Width="{Binding #width.Value}"
-                         Height="{Binding #width.Value}"
-                         Data="M12 3L2 12H5V20H19V12H22L12 3M13 18H11V16H13V18M13 14H11V8H13V14Z"
-                         IsActive="{Binding ElementName=active, Path=IsChecked}" />
-    </my:SimpleStackPanel>
+    <Grid ColumnDefinitions="Auto, *">
+        <Border Margin="{my:Thickness Default}"
+                Padding="{my:Thickness Default}"
+                VerticalAlignment="Stretch"
+                Classes="Outlined"
+                Theme="{DynamicResource MyNet.Theme.Border.Card}">
+            <my:NavigationMenu Name="menu" CollapseWidth="50" ExpandWidth="300">
+                <my:NavigationMenu.Header>
+                    <my:SimpleStackPanel Margin="{my:Thickness Large, Vertical}" Orientation="Horizontal">
+                        <Image Width="48"
+                               Height="48"
+                               VerticalAlignment="Center"
+                               my:NavigationMenu.CanToggle="True"
+                               Cursor="Hand"
+                               DockPanel.Dock="Left"
+                               RenderOptions.BitmapInterpolationMode="HighQuality"
+                               Source="../Assets/TestApp.ico" />
+                        <TextBlock VerticalAlignment="Center"
+                                   Classes="H4"
+                                   IsVisible="{Binding !#menu.IsHorizontalCollapsed}"
+                                   Text="{Binding ProductName}" />
+                    </my:SimpleStackPanel>
+                </my:NavigationMenu.Header>
+                <!--<my:NavigationMenu.Footer>
+                    <my:IconButton HorizontalAlignment="Stretch" Classes="Tertiary" Theme="{DynamicResource BorderlessIconButton}">
+                        <TextBlock IsVisible="{Binding !#menu.IsHorizontalCollapsed}" Text="Settings" />
+                        <my:IconButton.Icon>
+                            <PathIcon Width="16" Height="16" Data="{StaticResource SettingIcon}" />
+                        </my:IconButton.Icon>
+                        <Button.Flyout>
+                            <Flyout Placement="RightEdgeAlignedBottom">
+                                <my:Form LabelPosition="Left">
+                                    <ComboBox MinWidth="100"
+                                              my:FormItem.Label="ThemeVariant"
+                                              DisplayMemberBinding="{Binding Name}"
+                                              ItemsSource="{Binding Themes}"
+                                              PlaceholderText="Select a theme"
+                                              SelectedItem="{Binding SelectedTheme}" />
+                                </my:Form>
+                            </Flyout>
+                        </Button.Flyout>
+                    </my:IconButton>
+                </my:NavigationMenu.Footer>-->
+
+                <my:NavigationMenuItem Header="ee" Icon="{StaticResource MyNet.Geometry.ChartLine}" IsSeparator="True" />
+                <my:NavigationMenuItem Header="sdf df" Icon="{StaticResource MyNet.Geometry.ChartLine}" />
+                <my:NavigationMenuItem Header="qg g qg" Icon="{StaticResource MyNet.Geometry.ChartLine}" />
+                <my:NavigationMenuItem Header=" zqzegz" Icon="{StaticResource MyNet.Geometry.ChartLine}" />
+                <my:NavigationMenuItem Header=" zezeez er " Icon="{StaticResource MyNet.Geometry.ChartLine}" IsSeparator="True" />
+                <my:NavigationMenuItem Header=" er er" Icon="{StaticResource MyNet.Geometry.ChartLine}" />
+                <my:NavigationMenuItem Header="  eerrer" Icon="{StaticResource MyNet.Geometry.ChartLine}" />
+                <my:NavigationMenuItem Header=" er r" Icon="{StaticResource MyNet.Geometry.ChartLine}" />
+                <my:NavigationMenuItem Header=" erre r" Icon="{StaticResource MyNet.Geometry.ChartLine}" />
+            </my:NavigationMenu>
+        </Border>
+        <!--<ContentControl
+            Grid.Column="1"
+            Margin="12 36 12 12"
+            Content="{Binding Content}">
+            <ContentControl.ContentTemplate>
+                <converters:ViewLocator />
+            </ContentControl.ContentTemplate>
+        </ContentControl>-->
+    </Grid>
 </UserControl>

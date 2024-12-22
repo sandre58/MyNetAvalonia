@@ -17,10 +17,33 @@
                                                         Linux=True}"
                    mc:Ignorable="d">
     <my:ExtendedWindow.RightContent>
-        <StackPanel Orientation="Horizontal">
+        <my:SimpleStackPanel Margin="{my:Thickness Medium, Horizontal}" VerticalAlignment="Center" Orientation="Horizontal">
+
+            <!-- Language -->
+            <ListBox VerticalAlignment="Center"
+                     ItemsSource="{Binding Cultures}"
+                     SelectedValue="{Binding SelectedCulture}">
+                <!--<ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Image x:Name="Image"
+                               Margin="{StaticResource MyNet.Margins.Small.Horizontal}"
+                               Cursor="Hand"
+                               Source="{Binding Converter={x:Static my:CultureToFlagConverter.Default}}"
+                               ToolTip="{my:Translation DisplayName,
+                                                        Casing=Title}" />
+                        <DataTemplate.Triggers>
+                            <DataTrigger Binding="{Binding IsSelected, RelativeSource={RelativeSource AncestorType={x:Type ListBoxItem}}}" Value="False">
+                                <Setter TargetName="Image" Property="Opacity" Value="{StaticResource MyNet.Opacity.Disabled}" />
+                            </DataTrigger>
+                        </DataTemplate.Triggers>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>-->
+            </ListBox>
+            
+            <!-- Theme -->
             <my:SimpleStackPanel Margin="{my:Thickness Medium, Horizontal}" VerticalAlignment="Center" Orientation="Horizontal">
-                <!--<Button Command="{Binding IsLightCommand}" Content="{my:Icon WeatherSunny, Small}" ToolTip="{my:Resource Light}" />
-                <Button Command="{Binding IsDarkCommand}" Content="{my:Icon WeatherNight, Small}" ToolTip="{my:Resource Dark}" />-->
+                <Button Command="{Binding IsLightCommand}" Content="{my:Icon WeatherSunny, Small}" ToolTip.Tip="{my:Resource Light}" />
+                <Button Command="{Binding IsDarkCommand}" Content="{my:Icon WeatherNight, Small}" ToolTip.Tip="{my:Resource Dark}" />
                 <!--<Button Style="{StaticResource MyNet.Styles.Button.Icon.Foreground}"
                         Command="{Binding IsLightCommand}"
                         Content="{my:ToolIcon Kind=WeatherSunny}"
@@ -32,7 +55,7 @@
                         ToolTip="{my:Resource Dark}" />-->
             </my:SimpleStackPanel>
             <!--<my:ThemeToggleButton IsThreeState="True" Mode="Controller" />-->
-        </StackPanel>
+        </my:SimpleStackPanel>
     </my:ExtendedWindow.RightContent>
     <views:MainView />
 </my:ExtendedWindow>

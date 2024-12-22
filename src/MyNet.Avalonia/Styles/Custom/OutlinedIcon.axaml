@@ -44,5 +44,13 @@
             <Setter Property="Height" Value="{StaticResource MyNet.Icon.Size.ExtraLarge}" />
             <Setter Property="Width" Value="{StaticResource MyNet.Icon.Size.ExtraLarge}" />
         </Style>
+        <Style Selector="^.Secondary">
+            <Setter Property="Background" Value="{my:Brush $self.Foreground, Opacity={StaticResource MyNet.Opacity.Secondary}}" />
+            <Setter Property="BorderBrush" Value="{Binding $self.Background}" />
+        </Style>
+        <Style Selector="^.Primary">
+            <Setter Property="ActiveBackground" Value="{DynamicResource MyNet.Brush.Primary}" />
+            <Setter Property="ActiveBorderBrush" Value="{DynamicResource MyNet.Brush.Primary}" />
+        </Style>
     </ControlTheme>
 </ResourceDictionary>

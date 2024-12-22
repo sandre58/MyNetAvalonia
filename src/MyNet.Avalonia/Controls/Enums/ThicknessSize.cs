@@ -7,7 +7,7 @@ namespace MyNet.Avalonia.Controls.Enums
     {
         None = 0,
         Small = 2,
-        Normal = 5,
+        Default = 5,
         Medium = 10,
         Large = 15,
         ExtraLarge = 20,

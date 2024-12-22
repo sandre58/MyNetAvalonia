@@ -1,0 +1,49 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:my="http://mynet.com/avalonia"
+                    x:CompileBindings="True">
+    <Design.PreviewWith>
+        <StackPanel Margin="20" Spacing="20">
+            <Border Theme="{StaticResource MyNet.Theme.Border.Card}">
+                <TextBlock>Hello</TextBlock>
+            </Border>
+            <Border Classes="Shadow" Theme="{StaticResource MyNet.Theme.Border.Card}">
+                <TextBlock>Hello</TextBlock>
+            </Border>
+            <Border Classes="Hover" Theme="{StaticResource MyNet.Theme.Border.Card}">
+                <TextBlock>Hello</TextBlock>
+            </Border>
+        </StackPanel>
+    </Design.PreviewWith>
+
+    <ControlTheme x:Key="MyNet.Theme.Border.Card" TargetType="Border">
+        <Setter Property="my:ShadowAssist.ShadowDepth" Value="Depth0" />
+        <Setter Property="BorderBrush" Value="Transparent" />
+        <Setter Property="Background" Value="{DynamicResource MyNet.Brush.Container.Background}" />
+        <Setter Property="CornerRadius" Value="{StaticResource MyNet.CornerRadius.Container}" />
+        <Setter Property="Padding" Value="{StaticResource MyNet.Padding.Container}" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Style Selector="^.Shadow">
+            <Setter Property="my:ShadowAssist.ShadowDepth" Value="{StaticResource MyNet.ShadowDepth.Container}" />
+        </Style>
+        <Style Selector="^.Outlined">
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="BorderBrush" Value="{DynamicResource MyNet.Brush.Container.Border}" />
+        </Style>
+        <Style Selector="^.Hover:pointerover">
+            <Setter Property="my:ShadowAssist.ShadowDepth" Value="{StaticResource MyNet.ShadowDepth.Container}" />
+        </Style>
+    </ControlTheme>
+
+    <ControlTheme x:Key="MyNet.Theme.Border.Popup" TargetType="Border">
+        <Setter Property="my:ShadowAssist.ShadowDepth" Value="{StaticResource MyNet.ShadowDepth.Popup}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource MyNet.Brush.Popup.Border}" />
+        <Setter Property="Background" Value="{DynamicResource MyNet.Brush.Popup.Background}" />
+        <Setter Property="CornerRadius" Value="{StaticResource MyNet.CornerRadius.Popup}" />
+        <Setter Property="Padding" Value="{StaticResource MyNet.Padding.Popup}" />
+        <Setter Property="BorderThickness" Value="{StaticResource MyNet.BorderThickness.Popup}" />
+        <Setter Property="VerticalAlignment" Value="{StaticResource MyNet.VerticalAlignment.Container}" />
+        <Setter Property="HorizontalAlignment" Value="{StaticResource MyNet.HorizontalAlignment.Container}" />
+        <Setter Property="Margin" Value="{StaticResource MyNet.Margin.Popup}" />
+    </ControlTheme>
+</ResourceDictionary>

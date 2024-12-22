@@ -1,22 +1,41 @@
 <ResourceDictionary xmlns="https://github.com/avaloniaui"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:my="http://mynet.com/avalonia">
 
     <!-- Font Sizes -->
     <x:Double x:Key="MyNet.Font.Size.Button">12</x:Double>
+    <x:Double x:Key="MyNet.Font.Size.Menu">12</x:Double>
     
     <!-- Font Weight -->
     <FontWeight x:Key="MyNet.Font.Weight.Button">Normal</FontWeight>
     
     <!-- Padding -->
     <Thickness x:Key="MyNet.Padding.Button">11,5</Thickness>
+    <Thickness x:Key="MyNet.Padding.ToolTip">5</Thickness>
+    <Thickness x:Key="MyNet.Padding.Container">10</Thickness>
+    <Thickness x:Key="MyNet.Padding.Popup">0</Thickness>
+
+    <!-- Margin -->
+    <Thickness x:Key="MyNet.Margin.Popup">8</Thickness>
 
     <!-- Corner -->
-    <CornerRadius x:Key="MyNet.CornerRadius.Button">3</CornerRadius>
+    <CornerRadius x:Key="MyNet.CornerRadius.Control">3</CornerRadius>
+    <CornerRadius x:Key="MyNet.CornerRadius.Popup">4</CornerRadius>
+    <CornerRadius x:Key="MyNet.CornerRadius.ToolTip">4</CornerRadius>
+    <CornerRadius x:Key="MyNet.CornerRadius.Container">4</CornerRadius>
 
+    <!-- Border Thickness -->
+    <Thickness x:Key="MyNet.BorderThickness.ToolTip">0</Thickness>
+    <Thickness x:Key="MyNet.BorderThickness.Popup">0</Thickness>
+    
     <!-- Alignments -->
     <VerticalAlignment x:Key="MyNet.VerticalAlignment.Control">Center</VerticalAlignment>
     <VerticalAlignment x:Key="MyNet.VerticalAlignment.Container">Stretch</VerticalAlignment>
     <HorizontalAlignment x:Key="MyNet.HorizontalAlignment.Control">Left</HorizontalAlignment>
     <HorizontalAlignment x:Key="MyNet.HorizontalAlignment.Container">Stretch</HorizontalAlignment>
     
+    <!-- Shadow-->
+    <my:ShadowDepth x:Key="MyNet.ShadowDepth.Container">Depth1</my:ShadowDepth>
+    <my:ShadowDepth x:Key="MyNet.ShadowDepth.Popup">Depth2</my:ShadowDepth>
+
 </ResourceDictionary>

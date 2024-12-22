@@ -2,6 +2,7 @@
 // See the LICENSE file in the project root for more information.
 
 using System;
+using System.ComponentModel;
 using Avalonia;
 using Avalonia.Markup.Xaml;
 using MyNet.Avalonia.Controls.Enums;
@@ -13,6 +14,8 @@ namespace MyNet.Avalonia.MarkupExtensions
         public ThicknessExtension()
         {
         }
+
+        public ThicknessExtension(ThicknessSize size) => Size = size;
 
         public ThicknessExtension(ThicknessSize size, ThicknessDirection direction)
         {

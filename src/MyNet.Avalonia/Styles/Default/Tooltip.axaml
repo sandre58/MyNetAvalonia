@@ -1,0 +1,38 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:my="http://mynet.com/avalonia"
+                    x:CompileBindings="True">
+    <ControlTheme x:Key="{x:Type ToolTip}" TargetType="ToolTip">
+        <Setter Property="Foreground" Value="{my:Brush $self.Background, Contrast=True}" />
+        <Setter Property="Background" Value="{DynamicResource MyNet.Brush.ToolTip.Background}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource MyNet.Brush.ToolTip.Border}" />
+        <Setter Property="BorderThickness" Value="{StaticResource MyNet.BorderThickness.ToolTip}" />
+        <Setter Property="Padding" Value="{StaticResource MyNet.Padding.ToolTip}" />
+        <Setter Property="CornerRadius" Value="{StaticResource MyNet.CornerRadius.ToolTip}" />
+        <Setter Property="Opacity" Value="0" />
+        <Setter Property="Transitions">
+            <Transitions>
+                <DoubleTransition Property="Opacity" Duration="0:0:0.1" />
+            </Transitions>
+        </Setter>
+        <Setter Property="Template">
+            <ControlTemplate TargetType="ToolTip">
+                <Border Name="PART_LayoutRoot"
+                        Padding="{TemplateBinding Padding}"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        CornerRadius="{TemplateBinding CornerRadius}">
+                    <ContentPresenter Name="PART_ContentPresenter"
+                                      Content="{TemplateBinding Content}"
+                                      ContentTemplate="{TemplateBinding ContentTemplate}"
+                                      TextBlock.TextWrapping="Wrap" />
+                </Border>
+            </ControlTemplate>
+        </Setter>
+
+        <Style Selector="^:open">
+            <Setter Property="Opacity" Value="1" />
+        </Style>
+    </ControlTheme>
+</ResourceDictionary>
